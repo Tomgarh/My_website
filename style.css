@@ -1,0 +1,321 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 45px;
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    
+}
+.head-img{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 200px;
+
+}
+.head-img a{
+    text-decoration: none;
+    color: chartreuse;
+}
+.head-img span{
+    color: blue;
+}
+.contact{
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.login{
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+
+nav {
+    margin-bottom: 20px;
+}
+nav a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+nav a::after{
+    content: " ▼";
+}
+
+.hero{
+    background-image: url("../OIST/willian-justen-de-vasconcellos-HIgLoYYY2qU-unsplash.jpg");
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+
+}
+.todo{
+    display: flex;
+    padding: 10px;
+}
+.plan{
+    margin-left: 800px;
+}
+.itin{
+    margin-left: 200px;
+    display: flex;
+    text-decoration: none;
+    padding: 5px;
+}
+.itin a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: skyblue;
+    transition: 0.3s;
+
+}
+.itin a:hover{
+    background-color: gold;
+    border-radius: 10px;
+    
+}
+.plan button{
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.history{
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.article{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 22%;          
+    margin-top: 7%;  
+    margin-left: 50px;
+    height: 70%;
+}
+.days{
+    font-size: larger;
+    font-weight: bolder;
+}
+.dc{
+    font-size: large;
+    font-weight: bold;
+}
+.viewitin{
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.writeup{
+    width: 800px;
+}
+.article hr{
+    margin-left: -50px;
+    margin-right: -10px;
+}
+.lead{
+    display: flex;
+    background-color: aqua;
+    height: 30%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    flex-direction: column;
+    margin-top: 70px;
+
+}
+
+.quote{
+    margin-bottom: 70px;
+}
+.quote button{
+    border: none;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.people p{
+    display: block;
+    margin-left: 600px;
+    margin-right: 510px;
+    font-size: xx-large;
+    font-style: oblique;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.show{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px;
+    height: 400px; 
+    width: 210px;
+    overflow: hidden;
+}
+.gallery a{
+    text-decoration: none;
+}
+.show img{
+    border-radius: 15px;
+    object-fit: cover;        /* fills the box without stretching */
+    transition: transform 0.4s ease;
+    width: 200px;
+    height: 300px;
+    padding-top: 10px;
+
+}
+.show img:hover{
+    transform: scale(1.1);
+}
+.show figcaption{
+    padding-top: 20px;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+.show span{
+    display: flex;
+    color: aquamarine;
+    margin-top: 10px;
+    margin-left: 35%;
+    font-size: small;
+    font-weight: 800;
+    
+}
+
+.gallery{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 40px;
+}
+.experience p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+.icons figcaption{
+    margin-top: 8px;
+    font-size: 14px;
+}
+.experience button{
+    display: block;
+    margin-left: 46%;
+    margin-right: 46%;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    border: 1px solid;
+}
+.icons a{
+    text-decoration: none;
+    color: black;
+}
+.dark{
+    background-color: black;
+    height: 500px;
+}
+.last{
+    display: flex;
+    color: aliceblue;
+    text-align: left;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 50px;
+}
+.help{
+    margin-top: 30px;
+}
+.help a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.help p{
+    font-size: medium;
+    font-weight: bold;
+}
+.work{
+    display: flex;
+    padding-bottom: 30px;
+   
+}
+.work a{
+    padding: 20px;
+}
+.odd{
+    background-color: black;
+}
+.line{
+    max-width: 100%;
+    width: 70%;
+}
+.foot{
+    display: flex;
+    margin-left: 400px;
+    background-color: black;
+    color: wheat;
+
+}
+footer a{
+    margin-left: 400px;
+    color: white;
+}
+a:{
+    border-bottom: 9p;
+    line-height: ;
+}
