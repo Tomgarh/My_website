@@ -1,321 +1,200 @@
-body{
+/* Reset and basic */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header{
-    height: 45px;
-    width: 1500px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
-    
-}
-.head-img{
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 200px;
 
+body {
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
 }
-.head-img a{
-    text-decoration: none;
-    color: chartreuse;
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
-.head-img span{
-    color: blue;
-}
-.contact{
-    background-color: blue;
-    padding: 10px;
+
+/* Header */
+header {
+    background-color: #008751; /* Nigeria green */
     color: white;
-    border-radius: 10px;
-    border: none;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-.login{
-    background-color: blue;
-    padding: 10px;
+
+header h1 {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+
+header nav {
+    float: right;
+    margin-right: 1rem;
+}
+
+header nav a {
     color: white;
-    border-radius: 10px;
-    border: none;
-}
-
-
-nav {
-    margin-bottom: 20px;
-}
-nav a{
-    text-decoration: none;
     margin-left: 20px;
-}
-nav a::after{
-    content: " ▼";
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.hero{
-    background-image: url("../OIST/willian-justen-de-vasconcellos-HIgLoYYY2qU-unsplash.jpg");
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
+header nav a:hover {
+    color: #ffd700; /* subtle gold hover */
+}
+
+/* Hero */
+.hero {
+    background: url('images/nigeria-hero.jpg') no-repeat center center/cover;
+    height: 450px;
+    color: white;
+    display: flex;
     align-items: center;
-    display: flex;
     justify-content: center;
-    color: aliceblue;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    padding: 0 1rem;
+}
 
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px #00000080;
 }
-.todo{
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px #00000080;
+}
+
+.hero button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #ffd700;
+    color: #008751;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background-color: #e6c200;
+}
+
+/* Tours Section */
+.tours {
+    background: #fff;
+    padding: 3rem 0;
+}
+
+.tours h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #008751;
+}
+
+.tour-grid {
     display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tour-card {
+    background: #f0f0f0;
+    flex: 1 1 280px;
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.tour-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.tour-card h3 {
+    margin-bottom: 0.5rem;
+    color: #008751;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.destinations h2 {
+    color: #008751;
+    margin-bottom: 1.5rem;
+}
+
+.destinations ul {
+    list-style-type: none;
+}
+
+.destinations li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+/* Culture Section */
+.culture {
+    background-color: #e8f5e9; /* light green */
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.culture h2 {
+    color: #008751;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section - Simple Version */
+.contact form input,
+.contact form textarea {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 10px; /* spacing between fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
-.plan{
-    margin-left: 800px;
-}
-.itin{
-    margin-left: 200px;
-    display: flex;
-    text-decoration: none;
-    padding: 5px;
-}
-.itin a{
-    text-decoration: none;
+
+.contact form button {
     padding: 10px 20px;
-    color: skyblue;
-    transition: 0.3s;
-
-}
-.itin a:hover{
-    background-color: gold;
-    border-radius: 10px;
-    
-}
-.plan button{
-    background-color: blue;
-    text-decoration: none;
+    background-color: #008751; /* Nigeria green */
     color: white;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 10px;
     border: none;
-    margin-top: 10px;
-}
-.history{
-    display: flex;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-.article{
-    padding: 10px;
-    border: 1px solid;
-    border-radius: 10px;
-    width: 22%;          
-    margin-top: 7%;  
-    margin-left: 50px;
-    height: 70%;
-}
-.days{
-    font-size: larger;
-    font-weight: bolder;
-}
-.dc{
-    font-size: large;
-    font-weight: bold;
-}
-.viewitin{
-    background-color: blue;
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    display: block;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.writeup{
-    width: 800px;
-}
-.article hr{
-    margin-left: -50px;
-    margin-right: -10px;
-}
-.lead{
-    display: flex;
-    background-color: aqua;
-    height: 30%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: xx-large;
-    font-weight: bolder;
-    flex-direction: column;
-    margin-top: 70px;
-
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
-.quote{
-    margin-bottom: 70px;
-}
-.quote button{
-    border: none;
-    background-color: blue;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-}
-.people p{
-    display: block;
-    margin-left: 600px;
-    margin-right: 510px;
-    font-size: xx-large;
-    font-style: oblique;
-}
-.gallery{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.show{
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    border-radius: 15px;
-    border: solid 1px;
-    height: 400px; 
-    width: 210px;
-    overflow: hidden;
-}
-.gallery a{
-    text-decoration: none;
-}
-.show img{
-    border-radius: 15px;
-    object-fit: cover;        /* fills the box without stretching */
-    transition: transform 0.4s ease;
-    width: 200px;
-    height: 300px;
-    padding-top: 10px;
-
-}
-.show img:hover{
-    transform: scale(1.1);
-}
-.show figcaption{
-    padding-top: 20px;
-    font-size: large;
-    font-weight: bold;
-    color: black;
-}
-.show span{
-    display: flex;
-    color: aquamarine;
-    margin-top: 10px;
-    margin-left: 35%;
-    font-size: small;
-    font-weight: 800;
-    
+.contact form button:hover {
+    background-color: #00693f; /* darker green on hover */
 }
 
-.gallery{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    border-bottom: 1px solid gray;
-    padding-bottom: 40px;
-}
-.experience p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-    font-weight: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.icons{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    text-align: center;
-    max-width: 1000px;
-    margin: auto;
-    gap: 15px;
-    margin-bottom: 20px;
-
-}
-.icons figcaption{
-    margin-top: 8px;
-    font-size: 14px;
-}
-.experience button{
-    display: block;
-    margin-left: 46%;
-    margin-right: 46%;
-    padding: 20px;
-    background-color: aliceblue;
-    border-radius: 30px;
-    border: 1px solid;
-}
-.icons a{
-    text-decoration: none;
-    color: black;
-}
-.dark{
-    background-color: black;
-    height: 500px;
-}
-.last{
-    display: flex;
-    color: aliceblue;
-    text-align: left;
-    justify-content: center;
-    gap: 150px;
-    margin-top: 50px;
-}
-.help{
-    margin-top: 30px;
-}
-.help a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-}
-.help p{
-    font-size: medium;
-    font-weight: bold;
-}
-.work{
-    display: flex;
-    padding-bottom: 30px;
-   
-}
-.work a{
-    padding: 20px;
-}
-.odd{
-    background-color: black;
-}
-.line{
-    max-width: 100%;
-    width: 70%;
-}
-.foot{
-    display: flex;
-    margin-left: 400px;
-    background-color: black;
-    color: wheat;
-
-}
-footer a{
-    margin-left: 400px;
-    color: white;
-}
-a:{
-    border-bottom: 9p;
-    line-height: ;
+/* Keep the form full-width inside the container */
+.contact form {
+    max-width: 600px;
+    margin: auto; /* center form */
 }
