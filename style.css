@@ -54,7 +54,7 @@ header nav a:hover {
 
 /* Hero */
 .hero {
-    background: url('../Naijaflag.jpg') no-repeat center center/cover;
+    background-image: url("Images & Logos/Naijaflag.jpg");
     height: 450px;
     color: white;
     display: flex;
@@ -62,7 +62,10 @@ header nav a:hover {
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
+    background-size: cover;      /* ensures the flag fills the hero */
+    background-position: center; /* centers the flag nicely */
 }
+
 
 .hero h2 {
     font-size: 2.8rem;
