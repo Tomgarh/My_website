@@ -54,7 +54,7 @@ header nav a:hover {
 
 /* Hero */
 .hero {
-    background: url('images/nigeria-hero.jpg') no-repeat center center/cover;
+    background: url('../Naijaflag.jpg') no-repeat center center/cover;
     height: 450px;
     color: white;
     display: flex;
